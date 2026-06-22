@@ -130,6 +130,10 @@
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
         </button>
+        <div class="contact__trust-signals" style="margin-top: 1rem; text-align: center; font-size: 0.875rem; color: #6b7280;">
+          <p style="margin: 0.5rem 0;">{{ 'templates.contact.form.privacy_note' | t: default: 'Your information is secure and will never be shared.' }}</p>
+          <p style="margin: 0.5rem 0;">{{ 'templates.contact.form.response_time' | t: default: 'We typically respond within 24 hours.' }}</p>
+        </div>
       </div>
     {%- endform -%}
   </div>
